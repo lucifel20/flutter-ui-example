@@ -28,7 +28,8 @@ class HomeRoute extends StatelessWidget {
     final double notificationPanelHeight = MediaQuery.of(context).padding.top;
     final double statusBarHeight = MediaQuery.of(context).padding.bottom;
     final double appBarHeight = ACTIONBAR_HEIGHT;
-    final double bodyHeight = screenHeight - notificationPanelHeight - statusBarHeight - appBarHeight;
+    final double bodyHeight =
+        screenHeight - notificationPanelHeight - statusBarHeight - appBarHeight;
 
     return Scaffold(
       appBar: ActionBar(),
@@ -110,21 +111,15 @@ class _Container1 extends State<Container1> {
   int _dropdownMenuValue = 0;
 
   void _checkBox1ValueChanged(bool value) {
-    setState(() {
-      _checkBox1Value = value;
-    });
+    setState(() => _checkBox1Value = value);
   }
 
   void _checkBox2ValueChanged(bool value) {
-    setState(() {
-      _checkBox2Value = value;
-    });
+    setState(() => _checkBox2Value = value);
   }
 
   void _switchValueChanged(bool value) {
-    setState(() {
-      _switchValue = value;
-    });
+    setState(() => _switchValue = value);
   }
 
   void _radioValueChanged(int value) {
@@ -142,9 +137,7 @@ class _Container1 extends State<Container1> {
   }
 
   void _dropdownMenuValueChanged(dynamic value) {
-    setState(() {
-      _dropdownMenuValue = value;
-    });
+    setState(() => _dropdownMenuValue = value);
   }
 
   @override
